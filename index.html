@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QA Engineer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+  background:#0b1220;
+  color:#e5e7eb;
+  line-height:1.6;
+}
+
+/* NAV */
+nav{
+  position:sticky;top:0;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 30px;
+  background:rgba(15,23,42,0.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav .logo{color:#38bdf8;font-weight:700}
+
+nav a{
+  color:#cbd5e1;
+  margin-left:15px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{color:#38bdf8}
+
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h2{color:#38bdf8;margin-bottom:15px}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.hero h1{
+  font-size:42px;
+  background:linear-gradient(90deg,#38bdf8,#a78bfa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p{margin-top:10px;color:#cbd5e1}
+
+.profile{
+  width:160px;height:160px;
+  border-radius:50%;
+  border:3px solid #38bdf8;
+  object-fit:cover;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:600;
+  font-size:13px;
+  cursor:pointer;
+  transition:.2s;
+  text-decoration:none;
+}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+
+.primary{
+  background:linear-gradient(90deg,#38bdf8,#6366f1);
+  color:#fff;
+  border:none;
+}
+.outline{
+  border:1px solid #334155;
+  color:#e5e7eb;
+  margin-left:8px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:16px;
+  border-radius:12px;
+  margin-top:12px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:12px;
+}
+
+/* SKILL */
+.skill{
+  background:rgba(56,189,248,0.08);
+  padding:7px 10px;
+  border-radius:8px;
+  margin:5px 0;
+  font-size:14px;
+  border:1px solid rgba(56,189,248,0.2);
+}
+
+/* EXPERIENCE */
+.role{color:#38bdf8;font-weight:600}
+.company{color:#94a3b8;font-size:13px;margin-bottom:8px}
+
+ul{margin-left:18px;color:#cbd5e1}
+li{margin-bottom:5px}
+
+/* PROJECTS */
+.bug{
+  border-left:3px solid #38bdf8;
+  padding:8px;
+  margin:6px 0;
+  background:rgba(56,189,248,0.05);
+  border-radius:6px;
+  font-size:14px;
+}
+
+/* BADGE */
+.badge{
+  display:inline-block;
+  background:#38bdf8;
+  color:#0b1220;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+}
+
+/* CONNECT */
+.connect-card a{
+  display:inline-block;
+  margin:6px;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:600;
+  color:#fff;
+  text-decoration:none;
+}
+
+.linkedin{background:#0077b5}
+.github{background:#1f2937}
+.email{background:#ef4444}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+  border-top:1px solid rgba(255,255,255,0.08);
+  font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">QA Portfolio</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#connect">Connect</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>QA Engineer<br>Fintech Systems</h1>
+    <div class="badge">[BREAKING THINGS PROFESSIONALLY]</div>
+
+    <p>
+      I find bugs in money flows before users do.<br>
+      If it touches payments, I’ve probably tried to break it.
+    </p>
+
+    <button class="btn primary" onclick="window.print()">Download CV</button>
+    <a class="btn outline" href="#about">View Profile</a>
+  </div>
+
+  <img class="profile" alt="" src="https://media.licdn.com/dms/image/v2/D5603AQGJzkHU4iI4PQ/profile-displayphoto-crop_800_800/B56ZyAfTIDIcBQ-/0/1771682215946?e=1781136000&v=beta&t=QV0RwL53EbMmY_5bST4pjTUyVA8R2KCvHXum3GWIBrA">
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+
+  <!-- ✅ EXACT ORIGINAL CONTENT KEPT AS REQUESTED -->
+  <div class="card">
+    <p>
+      I am <b>Priti Yadav</b>, a detail-oriented and quality-driven QA Engineer with hands-on experience in delivering reliable, secure, and high-performing software solutions within the banking and fintech domain.
+    </p>
+
+    <br>
+
+    <p>
+      With a strong foundation in both manual and functional testing, I specialize in analyzing complex business requirements and translating them into comprehensive test scenarios. I ensure end-to-end coverage across critical systems such as mobile banking applications, API workflows, onboarding processes, and transaction processing systems.
+    </p>
+
+    <br>
+
+    <p>
+      Currently working at <b>Nepal Clearing House Limited (NCHL)</b>, I contribute to ensuring the quality of mission-critical financial platforms by executing structured test strategies, identifying defects early in the development lifecycle, and collaborating closely with cross-functional teams in Agile environments.
+    </p>
+
+    <br>
+
+    <p>
+      Previously, I worked at <b>Jyoti Bikash Bank Limited</b>, where I strengthened my understanding of core banking operations, transaction workflows, and enterprise-level testing practices.
+    </p>
+
+    <br>
+
+    <p>
+      I bring expertise in <b>test case design, regression testing, defect management, API testing, and system validation</b>, with a strong focus on improving product stability and user experience.
+    </p>
+
+    <br>
+
+    <p>
+      I am continuously improving my skills in modern QA practices, including automation testing and API validation tools, to align with evolving industry standards.
+    </p>
+
+    <br>
+
+    <p>
+      My goal is to contribute to building scalable, robust, and user-centric digital products that perform seamlessly in real-world environments.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="skill">Manual Testing</div>
+      <div class="skill">API Testing</div>
+      <div class="skill">SQL</div>
+    </div>
+
+    <div class="card">
+      <div class="skill">Test Case Design</div>
+      <div class="skill">Bug Reporting</div>
+      <div class="skill">Regression</div>
+    </div>
+
+    <div class="card">
+      <div class="skill">Fintech Domain</div>
+      <div class="skill">Agile</div>
+      <div class="skill">Selenium (Basic)</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <div class="role">QA Engineer</div>
+    <div class="company">NCHL | 2024 - Present</div>
+    <ul>
+      <li>Tested fintech payment systems</li>
+      <li>API validation & regression testing</li>
+      <li>Defect tracking in Agile teams</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="role">QA Officer</div>
+    <div class="company">Jyoti Bikash Bank</div>
+    <ul>
+      <li>Core banking testing</li>
+      <li>UAT support</li>
+      <li>Transaction workflows</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <span class="badge">NSTQB Member</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Key Contributions</h2>
+
+  <div class="card">
+    <div class="bug">ConnectIPS (Web & App)</div>
+    <div class="small">Validated end-to-end payment flows, transaction reliability, and reconciliation across banking systems.</div>
+  </div>
+
+  <div class="card">
+    <div class="bug">NepalPay QR (Web & App)</div>
+    <div class="small">Tested QR scan performance, merchant payments, failure recovery, and cross-device compatibility.</div>
+  </div>
+
+  <div class="card">
+    <div class="bug">Corporate PAY (Web & App)</div>
+    <div class="small">Ensured secure bulk payment processing, approval workflows, and role-based access control testing.</div>
+  </div>
+
+  <div class="card">
+    <div class="bug">In-house Projects</div>
+    <div class="small">Supported internal fintech tools with regression testing, API validation, and release verification.</div>
+  </div>
+
+  <div class="card">
+    <div class="bug">Digital Mobile Banking Solutions (For Banks)</div>
+    <div class="small">End-to-end QA for mobile banking platforms including onboarding, transfers, bill payments, and authentication flows.</div>
+  </div>
+</section>
+
+<section id="connect">
+  <h2>Connect</h2>
+  <div class="connect-card">
+    <a class="linkedin" href="https://www.linkedin.com/in/priti-yadav-b59b62137/">LinkedIn</a>
+    <a class="github" href="https://github.com/pritiyadavNP">GitHub</a>
+    <a class="email" href="mailto:qapritiyadav@gmail.com">Email</a>
+  </div>
+</section>
+
+<footer>
+  © Priti Yadav · QA Engineer Portfolio
+</footer>
+
+</body>
+</html>
